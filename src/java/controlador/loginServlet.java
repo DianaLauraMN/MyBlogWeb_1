@@ -5,12 +5,18 @@
  */
 package controlador;
 
+import businessObjects.Administrator;
+import businessObjects.User;
+import daos.DAO;
+import factory.AdminFacada;
+import factory.SingleAdminFacada;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -35,7 +41,7 @@ public class loginServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet loginServlet</title>");            
+            out.println("<title>Servlet loginServlet</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet loginServlet at " + request.getContextPath() + "</h1>");
@@ -56,7 +62,7 @@ public class loginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
     }
 
     /**
@@ -70,11 +76,41 @@ public class loginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String url = "/Home.jsp";
-        String password= request.getParameter("password");
+        String url = "";
+        String password = request.getParameter("password");
         String userName = request.getParameter("userName");
-        
-        System.out.println(userName);
+        userName = userName.trim();
+        password = password.trim();
+        boolean log = false;
+        User user = null;
+        if (!userName.equalsIgnoreCase("")) {
+            if (!password.equalsIgnoreCase("")) {
+                user = findUser(userName, password);
+                if (user != null) {
+                    log = true;
+                } else {
+                    log = false;
+                }
+            } else {
+                log = false;
+            }
+        } else {
+            log = false;
+        }
+
+        if (log) {
+            boolean administrator = isNormal(user);
+            if(administrator){
+                url = "/DashBoard.jsp";
+            }else{
+                url = "/Home.jsp";
+            }
+            
+            HttpSession session = request.getSession();
+            session.setAttribute("user", user);
+        }else{
+            url = "/Login.jsp";
+        }
         getServletContext().getRequestDispatcher(url).forward(request, response);
     }
 
@@ -87,5 +123,23 @@ public class loginServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    public User findUser(String avatar, String password) {
+        AdminFacada controller = SingleAdminFacada.INSTACE.getFacada();
+        DAO dao = controller.getUserDAO();
+        User userFind = (User) dao.findLike(avatar).get(0);
+        if (userFind != null) {
+            if (userFind.getPassword().equalsIgnoreCase(password)) {
+                return userFind;
+            }
+        }
+        return null;
+    }
+    public boolean isNormal (User user){
+        if(user.getClass()== new Administrator().getClass()){
+            return true;
+        }
+        return false;
+    }
 
 }
