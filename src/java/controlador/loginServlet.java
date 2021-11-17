@@ -75,7 +75,6 @@ public class loginServlet extends HttpServlet {
         String userName = request.getParameter("userName");
         
         System.out.println(userName);
-        
         getServletContext().getRequestDispatcher(url).forward(request, response);
     }
 
