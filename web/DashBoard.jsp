@@ -1,7 +1,7 @@
 <%-- 
     Document   : DashBoard
-    Created on : 16 nov 2021, 19:53:13
-    Author     : Hector Zapata
+    Created on : 17/11/2021, 17:04:13
+    Author     : Manuel
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -19,13 +19,13 @@
             <section class="header">
                 <header class="barra container">
                     <a href="" class="logo">
-                        <img src="../img/icons/logo.svg" alt="">
+                        <img src="img/icons/logo.png" alt="">
                     </a>
                     <section class="title">
                         <h1>Dashboard</h1>
                     </section>
                     <a href="login.html">
-                        <img src="../img/icons/back.svg" alt="">
+                        <img src="img/icons/backPink.png" alt="">
                     </a>
                 </header>
             </section>
@@ -34,9 +34,9 @@
            <h1 style="color: black">Hello <c:out value="${user.fullName}"></c:out></h1>
            
             <section class="container search-section">
-                <a href="menuPost.html" class="newPost">
+                <a href="MenuPost.jsp" class="newPost">
                     <p>New</p>
-                    <img src="../img/icons/Plus.svg" alt="">
+                    <img src="img/icons/plus.png" alt="">
                 </a>
 
                 <section class="input-search">
@@ -52,11 +52,11 @@
                 <section class="post">
                     <section class="post__header">
                         <section class="header__info">
-                            <img src="../img/icons/UserIcon.svg" alt="">
+                            <img src="img/icons/userIcon.png" alt="">
                             <p>Post Title: by <span> user</span></p>
                         </section>
                         <section class="header__date">
-                            <img src="../img/icons/dateIcon.svg" alt="">
+                            <img src="img/icons/dateIcon.png" alt="">
                             <p>2021-12-12</p>
                         </section>
                     </section>
@@ -66,11 +66,11 @@
                     <section class="post__options">
                         <section class="option options__delete">
                             <p>Delete</p>
-                            <img src="../img/icons/Vector.svg" alt="">
+                            <img src="img/icons/deleteIcon.png" alt="">
                         </section>
                         <section class="option options__edit">
                             <p>Edit</p>
-                            <img src="../img/icons/Vector-1.svg" alt="">
+                            <img src="img/icons/editIcon.png" alt="">
                         </section>
 
                     </section>
@@ -79,11 +79,11 @@
                 <section class="post">
                     <section class="post__header">
                         <section class="header__info">
-                            <img src="../img/icons/UserIcon.svg" alt="">
+                            <img src="img/icons/userIcon2.png" alt="">
                             <p>Post Title: by <span> user</span></p>
                         </section>
                         <section class="header__date">
-                            <img src="../img/icons/dateIcon.svg" alt="">
+                            <img src="img/icons/dateIcon.png" alt="">
                             <p>2021-12-12</p>
                         </section>
                     </section>
@@ -93,11 +93,11 @@
                     <section class="post__options">
                         <section class="option options__delete">
                             <p>Delete</p>
-                            <img src="../img/icons/Vector.svg" alt="">
+                            <img src="img/icons/deleteIcon.png" alt="">
                         </section>
                         <section class="option options__edit">
                             <p>Edit</p>
-                            <img src="../img/icons/Vector-1.svg" alt="">
+                            <img src="img/icons/editIcon.png" alt="">
                         </section>
 
                     </section>
@@ -106,11 +106,11 @@
                 <section class="post">
                     <section class="post__header">
                         <section class="header__info">
-                            <img src="../img/icons/UserIcon.svg" alt="">
+                            <img src="img/icons/userIcon3.png" alt="">
                             <p>Post Title: by <span> user</span></p>
                         </section>
                         <section class="header__date">
-                            <img src="../img/icons/dateIcon.svg" alt="">
+                            <img src="img/icons/dateIcon.png" alt="">
                             <p>2021-12-12</p>
                         </section>
                     </section>
@@ -120,11 +120,11 @@
                     <section class="post__options">
                         <section class="option options__delete">
                             <p>Delete</p>
-                            <img src="../img/icons/Vector.svg" alt="">
+                            <img src="img/icons/deleteIcon.png" alt="">
                         </section>
                         <section class="option options__edit">
                             <p>Edit</p>
-                            <img src="../img/icons/Vector-1.svg" alt="">
+                            <img src="img/icons/editIcon.png" alt="">
                         </section>
 
                     </section>
@@ -133,11 +133,11 @@
                 <section class="post">
                     <section class="post__header">
                         <section class="header__info">
-                            <img src="../img/icons/UserIcon.svg" alt="">
+                            <img src="img/icons/userIcon4.png" alt="">
                             <p>Post Title: by <span> user</span></p>
                         </section>
                         <section class="header__date">
-                            <img src="../img/icons/dateIcon.svg" alt="">
+                            <img src="img/icons/dateIcon.png" alt="">
                             <p>2021-12-12</p>
                         </section>
                     </section>
@@ -147,11 +147,11 @@
                     <section class="post__options">
                         <section class="option options__delete">
                             <p>Delete</p>
-                            <img src="../img/icons/Vector.svg" alt="">
+                            <img src="img/icons/deleteIcon.png" alt="">
                         </section>
                         <section class="option options__edit">
                             <p>Edit</p>
-                            <img src="../img/icons/Vector-1.svg" alt="">
+                            <img src="img/icons/editIcon.png" alt="">
                         </section>
 
                     </section>
@@ -160,11 +160,11 @@
                 <section class="post">
                     <section class="post__header">
                         <section class="header__info">
-                            <img src="../img/icons/UserIcon.svg" alt="">
+                            <img src="img/icons/userIcon5.png" alt="">
                             <p>Post Title: by <span> user</span></p>
                         </section>
                         <section class="header__date">
-                            <img src="../img/icons/dateIcon.svg" alt="">
+                            <img src="img/icons/dateIcon.png" alt="">
                             <p>2021-12-12</p>
                         </section>
                     </section>
@@ -174,11 +174,11 @@
                     <section class="post__options">
                         <section class="option options__delete">
                             <p>Delete</p>
-                            <img src="../img/icons/Vector.svg" alt="">
+                            <img src="img/icons/deleteIcon.png" alt="">
                         </section>
                         <section class="option options__edit">
                             <p>Edit</p>
-                            <img src="../img/icons/Vector-1.svg" alt="">
+                            <img src="img/icons/editIcon.png" alt="">
                         </section>
 
                     </section>
@@ -187,11 +187,11 @@
                 <section class="post">
                     <section class="post__header">
                         <section class="header__info">
-                            <img src="../img/icons/UserIcon.svg" alt="">
+                            <img src="img/icons/userIcon6.png" alt="">
                             <p>Post Title: by <span> user</span></p>
                         </section>
                         <section class="header__date">
-                            <img src="../img/icons/dateIcon.svg" alt="">
+                            <img src="img/icons/dateIcon.png" alt="">
                             <p>2021-12-12</p>
                         </section>
                     </section>
@@ -201,11 +201,11 @@
                     <section class="post__options">
                         <section class="option options__delete">
                             <p>Delete</p>
-                            <img src="../img/icons/Vector.svg" alt="">
+                           <img src="img/icons/deleteIcon.png" alt="">
                         </section>
                         <section class="option options__edit">
                             <p>Edit</p>
-                            <img src="../img/icons/Vector-1.svg" alt="">
+                            <img src="img/icons/editIcon.png" alt="">
                         </section>
 
                     </section>
