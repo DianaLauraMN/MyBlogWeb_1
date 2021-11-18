@@ -153,6 +153,8 @@ margin: 2rem 0;
     outline: none;     
     border: 2px solid var(--colorBlue);
 }
+
+
 .form__password{
     display: flex;
     justify-content: center;
@@ -300,8 +302,7 @@ margin: 2rem 0;
     background-color: white;
     border-radius: 1rem;
     display: flex;
-    height: 100px; 
-    padding: 25rem 12rem;
+    padding: 20rem 10rem;
     margin-top: 6rem;
 }
 .navegation{
@@ -521,4 +522,13 @@ margin-top: 4rem;
     border-radius: 1rem;
     color: var(--colorWhite);
     cursor: pointer;
+}
+
+.input-form{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.input-form input{
+    margin-bottom: 1rem;
 }
