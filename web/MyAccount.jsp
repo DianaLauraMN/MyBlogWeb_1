@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,9 +43,73 @@
             </section>
 
 
-            <h2>My Account</h2>
+            <h2 class="txt-center">My Account</h2>
+           
+                <section>
+                    <form action="MyAccountServlet" method="POST" class="form-container form-border form-pading">
+                        <div>
 
-            
+                            <div class="input-form">
+                                <input type="text" placeholder="Your Avatar" name="avatar" value="${user.avatar}">
+                            <label>Avatar</label>
+                        </div>
+                        <div class="input-form">
+                            <input type="text" placeholder="Your Full Name" name="fullName" value="${user.fullName}">
+                            <label>Full Name</label>
+                        </div>
+                        <div class="input-form">
+                            <input type="email" placeholder="Your Email" name="email" value="${user.email}">
+                            <label>E-Mail</label>
+                        </div>
+
+                        <!--Password section-->
+                        <div class="input-form-password">
+                            <div class="input-form">
+                                <input type="password" placeholder="Your Old Password" name="oldPassword">
+                                <label>Old Password</label>
+                            </div>
+                            <div class="input-form">
+                                <input type="password" placeholder="Your New Password" name="password">
+                                <label>New Password</label>
+                            </div>
+                        </div>
+
+                        <div class="input-form">
+                            <input type="number" placeholder="Your Phone Number" min="0" name="phoneNumber" value="${user.phoneNumber}">
+                            <label>Phone Number</label>
+                        </div>
+
+                        <div class="input-form">
+                            <input type="text" placeholder="Your City" name="city" value="${user.city}">
+                            <label>City</label>
+                        </div>
+
+                        <div class="input-form">
+                            <input type="date" name="birthDay" value="${user.birthDay}">
+                            <label>BirthDay</label>
+                        </div>
+                        <div class="input-form">
+                            <select name="gender">
+
+                                <option value="" selected="" disabled="">-- Seleccione --</option>
+                                <option value="M">M</option>
+                                <option value="F">F</option>
+
+                            </select>
+                            <label>Gender</label>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="submit">
+                        <input class="btn btn-pink loginSpace" type="submit" value="Save" >
+                    </div>
+                </form>
+            </section>
+
+
         </main>
 
 
