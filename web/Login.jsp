@@ -40,7 +40,7 @@
                             </section>
 
                             <section class="backSignUp">
-                                <a href="signUp.jsp">
+                                <a href="SignUp.jsp">
                                     <img src="img/icons/SignUpIcon.png" alt="">
                                 </a>
                             </section>
