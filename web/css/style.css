@@ -26,7 +26,7 @@ h1{
     margin: 0;
     padding: 0;
     color: white;
-   
+
 }
 a{
     text-decoration: none;
@@ -60,7 +60,7 @@ p{
 }
 
 .loginSpace{
-margin: 2rem 0;
+    margin: 2rem 0;
 }
 
 .submit{
@@ -115,7 +115,7 @@ margin: 2rem 0;
     flex-direction: column;
 }
 .input label{
-   color: var(--colorWhite);
+    color: var(--colorWhite);
 }
 .input input{
     border: none;
@@ -134,22 +134,22 @@ margin: 2rem 0;
     border-radius: 10rem;
     color: var(--colorWhite);
     transition: .3s ease;
-    
-  margin: 0;      
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 
-  .input input:focus{
+.input input:focus{
     outline: none;     
     border: 2px solid var(--colorBlue);
 }
 
-  .input select:focus{
+.input select:focus{
     outline: none;     
     border: 2px solid var(--colorBlue);
 }
@@ -162,7 +162,7 @@ margin: 2rem 0;
     margin-top: 2rem;
 }
 .form__password label{
-   text-align: center;
+    text-align: center;
 }
 
 .form_Login{
@@ -335,12 +335,12 @@ margin: 2rem 0;
     align-items: center;
 }
 .important h2{
-   font-size: 2.6rem; 
-   text-align: center;}
+    font-size: 2.6rem; 
+    text-align: center;}
 .important h3{
     font-size: 2.5rem; 
     text-align: center;
- }
+}
 
 .importantPost{
     width: 50%;
@@ -351,7 +351,6 @@ margin: 2rem 0;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    box-shadow: var(--shadow);
 }
 .message{
     width: 90%;
@@ -365,6 +364,39 @@ margin: 2rem 0;
     max-width: 60rem;
     width: 90%;
     margin: 0 auto;
+}
+.inputTxt{
+    display: flex;
+    align-items: flex-start;
+    box-shadow: none;
+}
+.inputTxt input{
+    border: none;
+    background-color: transparent;
+}
+.txt:focus{
+    border: none;
+    outline: none;
+}
+.content{
+    padding: 4rem 1rem 8rem 1rem;
+}
+
+.size{
+    width: 50%;
+}
+.btnCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.decor{
+    width: 100%;
+    height: 5px;
+    background-color: var(--colorPink);
+    padding: 0rem 5rem  0  10rem;
+    margin-bottom: 4rem;
+    border-radius: 3rem;
 }
 #titleForm{
     border: 3px solid var(--colorBlue);
@@ -398,15 +430,64 @@ margin: 2rem 0;
     margin-left: 20rem;
 }
 
+.line{
+    width: 40%;
+    margin: 0 auto;
+    border: none;
+    border-top: .5rem dashed var(--colorBlue);
+    margin-bottom: 4rem;
+}
+
+.pos{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.input_comment{
+    width: 100%;
+    border: none;
+    border: 4px solid var(--colorBlue);
+    border-radius: 2rem;
+    padding: .8rem;
+
+
+}
+.comment_space{
+    width: 100%;
+    margin-top: 1rem;
+}
+.comment_space input:focus{
+    outline: none;     
+    border: 4px solid var(--colorPink);
+}
+.blue_border{
+    width: 40%;
+    border: 4px solid var(--colorBlue);
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.post-column{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
 
 /*-----Admin-----*/
 
 .search-section{
-display: grid;
-grid-template-columns: 1fr 3fr 1fr;
-text-align: center;
-justify-content: center;
-margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .newPost{
@@ -433,7 +514,7 @@ margin-top: 4rem;
     flex-direction: column;
 }
 .input-search label{
-   color: var(--colorWhite);
+    color: var(--colorWhite);
 }
 .input-search input{
     border: none;
@@ -477,7 +558,7 @@ margin-top: 4rem;
     align-items: flex-end;
 }
 .header__info img{
-   width: 5rem;
+    width: 5rem;
 }
 .header__info p{
     margin: 0;
@@ -506,13 +587,13 @@ margin-top: 4rem;
 }
 
 .options__delete{
- background-color: #F55046;  
- display: flex; 
+    background-color: #F55046;  
+    display: flex; 
 }
 .options__edit{
- background-color: var(--colorBlue);  
- display: flex; 
- gap: 1rem;
+    background-color: var(--colorBlue);  
+    display: flex; 
+    gap: 1rem;
 
 }
 .option{
@@ -528,7 +609,7 @@ margin-top: 4rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    
+
 }
 .input-form input{
     margin-bottom: 1rem;
@@ -536,7 +617,7 @@ margin-top: 4rem;
     border: 4px solid var(--colorBlue);
     border-radius: 10px;
     padding: 10px;
-  
+
 }
 .input-form select{
     margin-bottom: 1rem;
@@ -566,4 +647,18 @@ margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     gap: 5px;
+}
+
+.mt20{
+    margin-top: 20rem;
+}
+
+.nb{
+    border:none;
+}
+
+.form-createPost{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
 }
